@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048468C023B649FC00395540 /* ViewController+DelegateAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048468BF23B649FC00395540 /* ViewController+DelegateAR.swift */; };
+		048468C423B651C400395540 /* fiveEur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 048468C323B651C400395540 /* fiveEur.jpg */; };
 		04C5AA5C23B63D900035396A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5AA5B23B63D900035396A /* AppDelegate.swift */; };
 		04C5AA5E23B63D900035396A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5AA5D23B63D900035396A /* SceneDelegate.swift */; };
 		04C5AA6023B63D900035396A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5AA5F23B63D900035396A /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048468BF23B649FC00395540 /* ViewController+DelegateAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+DelegateAR.swift"; sourceTree = "<group>"; };
+		048468C323B651C400395540 /* fiveEur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fiveEur.jpg; sourceTree = "<group>"; };
 		04C5AA5823B63D900035396A /* imageDetectAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageDetectAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C5AA5B23B63D900035396A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C5AA5D23B63D900035396A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		04C5AA6F23B63DB30035396A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				048468C323B651C400395540 /* fiveEur.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				04C5AA5F23B63D900035396A /* ViewController.swift */,
+				048468BF23B649FC00395540 /* ViewController+DelegateAR.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			files = (
 				04C5AA6823B63D920035396A /* LaunchScreen.storyboard in Resources */,
 				04C5AA6523B63D920035396A /* Assets.xcassets in Resources */,
+				048468C423B651C400395540 /* fiveEur.jpg in Resources */,
 				04C5AA6323B63D900035396A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +180,7 @@
 				04C5AA6023B63D900035396A /* ViewController.swift in Sources */,
 				04C5AA5C23B63D900035396A /* AppDelegate.swift in Sources */,
 				04C5AA5E23B63D900035396A /* SceneDelegate.swift in Sources */,
+				048468C023B649FC00395540 /* ViewController+DelegateAR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
