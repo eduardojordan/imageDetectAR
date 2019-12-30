@@ -9,6 +9,8 @@
 import UIKit
 import ARKit
 import SceneKit
+//import WebKit
+
 
 extension ViewController: ARSCNViewDelegate {
 
@@ -64,40 +66,24 @@ extension ViewController: ARSCNViewDelegate {
     
     // MARK: - SceneKit Helpers
     
-//    func displayDetailView(on rootNode: SCNNode, xOffset: CGFloat) {
-//        let detailPlane = SCNPlane(width: xOffset, height: xOffset * 1.4)
-//        detailPlane.cornerRadius = 0.25
-//
-//        let detailNode = SCNNode(geometry: detailPlane)
-//        detailNode.geometry?.firstMaterial?.diffuse.contents = SKScene(fileNamed: "DetailScene")
-//
-//        // Due to the origin of the iOS coordinate system, SCNMaterial's content appears upside down, so flip the y-axis.
-//        detailNode.geometry?.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
-//        detailNode.position.z -= 0.5
-//        detailNode.opacity = 0
-//
-//        rootNode.addChildNode(detailNode)
-//        detailNode.runAction(.sequence([
-//            .wait(duration: 1.0),
-//            .fadeOpacity(to: 1.0, duration: 1.5),
-//            .moveBy(x: xOffset * -1.1, y: 0, z: -0.05, duration: 1.5),
-//            .moveBy(x: 0, y: 0, z: -0.05, duration: 0.2)
-//            ])
-//        )
-//    }
+
     
     func displayWebView(on rootNode: SCNNode, xOffset: CGFloat) {
         // Xcode yells at us about the deprecation of UIWebView in iOS 12.0, but there is currently
         // a bug that does now allow us to use a WKWebView as a texture for our webViewNode
         // Note that UIWebViews should only be instantiated on the main thread!
-        DispatchQueue.main.async {
-            let request = URLRequest(url: URL(string: "https://es.wikipedia.org/wiki/Billete_de_cinco_euros")!)
+      DispatchQueue.main.async {
+            let request = URLRequest(url: URL(string: "https://www.apple.com")!)
     
+//            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 672))
+//            webView.load(request)
+            
+            
             let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 672))
             webView.loadRequest(request)
                         
             let webViewPlane = SCNPlane(width: xOffset, height: xOffset * 1.4)
-            webViewPlane.cornerRadius = 0.25
+            webViewPlane.cornerRadius = 0.15
             
             let webViewNode = SCNNode(geometry: webViewPlane)
             webViewNode.geometry?.firstMaterial?.diffuse.contents = webView
