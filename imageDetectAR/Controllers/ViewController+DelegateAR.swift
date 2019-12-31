@@ -73,17 +73,17 @@ extension ViewController: ARSCNViewDelegate {
         // a bug that does now allow us to use a WKWebView as a texture for our webViewNode
         // Note that UIWebViews should only be instantiated on the main thread!
       DispatchQueue.main.async {
-            let request = URLRequest(url: URL(string: "https://www.apple.com")!)
+            let request = URLRequest(url: URL(string: "https://www.uvinum.es/vino-vt-castilla/solaz-tempranillo-cabernet-2018?gaw=1&awc=16985_1577794256_070d77b41fcabd398cf179fddec43471&utm_campaign=afiliados&utm_source=awin-es")!)
     
 //            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 672))
 //            webView.load(request)
             
             
-            let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 672))
+            let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 972))
             webView.loadRequest(request)
                         
-            let webViewPlane = SCNPlane(width: xOffset, height: xOffset * 1.4)
-            webViewPlane.cornerRadius = 0.15
+        let webViewPlane = SCNPlane(width: xOffset, height: xOffset * 2.5)
+            webViewPlane.cornerRadius = 0.10
             
             let webViewNode = SCNNode(geometry: webViewPlane)
             webViewNode.geometry?.firstMaterial?.diffuse.contents = webView

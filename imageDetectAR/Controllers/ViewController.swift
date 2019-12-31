@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         sceneView.delegate = self 
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
+        
      
     }
 
